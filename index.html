@@ -47,7 +47,7 @@
                     <h1 class="display-6 text-dark"><i class="fas fa-swimmer text-primary me-3"></i>WaterLand</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button class="navbar-toggler icon-toggler" type="button" aria-label="Toggle navigation">
+                <button class="navbar-toggler icon-toggler" type="button" id="navbarToggler" aria-expanded="false">
                     <i class="fas fa-bars open-icon"></i>
                     <i class="fas fa-times close-icon d-none"></i>
                 </button>
@@ -722,22 +722,33 @@
     <script src="js/main.js"></script>
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggler = document.querySelector(".icon-toggler");
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggler = document.getElementById("navbarToggler");
             const collapse = document.getElementById("navbarCollapse");
             const openIcon = toggler.querySelector(".open-icon");
             const closeIcon = toggler.querySelector(".close-icon");
-    
-            toggler.addEventListener("click", function () {
+
+            // Открытие и закрытие меню
+            toggler.addEventListener("click", function() {
                 collapse.classList.toggle("show");
-    
-                // Переключение иконок
                 openIcon.classList.toggle("d-none");
                 closeIcon.classList.toggle("d-none");
             });
-    
-            // Закрытие при клике вне меню
-            document.addEventListener("click", function (e) {
+
+            // Закрытие меню при клике на ссылку
+            const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+            navLinks.forEach(link => {
+                link.addEventListener("click", function() {
+                    if (collapse.classList.contains("show")) {
+                        collapse.classList.remove("show");
+                        openIcon.classList.remove("d-none");
+                        closeIcon.classList.add("d-none");
+                    }
+                });
+            });
+
+            // Закрытие меню при клике вне меню
+            document.addEventListener("click", function(e) {
                 if (!toggler.contains(e.target) && !collapse.contains(e.target)) {
                     collapse.classList.remove("show");
                     openIcon.classList.remove("d-none");
@@ -745,7 +756,9 @@
                 }
             });
         });
+
     </script>
+    
     
     
     </body>

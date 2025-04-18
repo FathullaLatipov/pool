@@ -130,9 +130,6 @@
     padding-top: 90px;  /* Добавим отступ сверху для секции "Наши продукты" */
 }
 
-#About  {
-    padding-top: 90px;  /* Добавим отступ сверху для секции "Наши продукты" */
-}
 #Services  {
     padding-top: 90px;  /* Добавим отступ сверху для секции "Наши продукты" */
 }
@@ -326,7 +323,7 @@
 @media (max-width: 576px) {
     .header-carousel .header-carousel-item,
     .header-carousel .header-carousel-item img {
-        height: 60vh;
+        height: 80vh;
     }
 }
 

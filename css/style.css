@@ -633,6 +633,21 @@
     z-index: 3;
     opacity: 0;
 }
+.logo-title {
+    font-size: 2rem;
+}
+
+@media (max-width: 1840px) {
+    .display-6 {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .display-6 {
+        font-size: 1.3rem !important;
+    }
+}
 
 .attractions .attractions-item:hover .attractions-name {
     opacity: 1;

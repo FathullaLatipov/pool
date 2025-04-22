@@ -69,20 +69,28 @@
 .btn.btn-primary {
     color: var(--bs-white);
     border: none;
+    background-color: hsl(194, 76%, 44%) !important;
 }
 
 .btn.btn-primary:hover {
-    background: var(--bs-dark);
+    background: var(--bs-dark) !important;
+}
+
+.text-primary {
+    color: hsl(194, 76%, 44%) !important;
+}
+.bg-primary {
+    background-color: hsl(194, 76%, 44%) !important;
 }
 
 .btn.btn-light {
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
     border: none;
 }
 
 .btn.btn-light:hover {
     color: var(--bs-white);
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
 }
 
 .btn.btn-dark {
@@ -91,7 +99,7 @@
 }
 
 .btn.btn-dark:hover {
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
     background: var(--bs-light);
 }
 
@@ -123,7 +131,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
 }
 
 #Products {
@@ -158,7 +166,7 @@
 }
 
 .dropdown .dropdown-menu a:hover {
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
     color: var(--bs-white);
 }
 
@@ -193,12 +201,17 @@
 @media (max-width: 991px) {
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 8px 15px;
-        border: 1px solid var(--bs-primary);
-        color: var(--bs-primary);
+        border: 1px solid hsl(194, 76%, 44%);
+        color: hsl(194, 76%, 44%);
     }
 
     .sticky-top .navbar-light .navbar-nav .nav-link {
         padding: 12px 0;
+    }
+
+    .mobile-t {
+        text-align: left;
+        font-size: 1rem;
     }
 }
 /*** Navbar End ***/
@@ -340,7 +353,7 @@
     transform: translateY(-50%);
     margin-right: -60px;
     border-radius: 60px;
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
     color: var(--bs-white);
     font-size: 26px;
     display: flex;
@@ -350,7 +363,7 @@
 }
 .header-carousel .owl-nav .owl-next:hover {
     box-shadow: inset 0 0 100px 0 var(--bs-light);
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
 }
 
 .header-carousel .owl-nav .owl-next i {
@@ -508,7 +521,7 @@
     bottom: 0;
     left: 0;
     border-radius: 10px;
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
     transition: 0.5s;
     z-index: 2;
 }
@@ -518,7 +531,7 @@
 }
 
 .service .service-item i {
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
     transition: 0.5s;
 }
 
@@ -661,7 +674,7 @@
     position: absolute;
     top: -58px;
     left: 0;
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
     color: var(--bs-white);
     padding: 6px 35px;
     border-radius: 30px;
@@ -670,14 +683,14 @@
 
 .attractions .owl-nav .owl-prev:hover {
     background: var(--bs-white);
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
 }
 
 .attractions .owl-nav .owl-next {
     position: absolute;
     top: -58px;
     right: 0;
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
     color: var(--bs-white);
     padding: 6px 35px;
     border-radius: 30px;
@@ -686,7 +699,7 @@
 
 .attractions .owl-nav .owl-next:hover {
     background: var(--bs-white);
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
 }
 /*** Attractions End ***/
 
@@ -781,7 +794,7 @@
     left: 25px;
     border-radius: 10px;
     color: var(--bs-white);
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
     z-index: 5;
 }
 
@@ -803,7 +816,7 @@
 /*** Team Start ***/
 .team .team-item {
     position: relative;
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
     border-radius: 10px;
 }
 
@@ -843,7 +856,7 @@
 }
 
 .team .team-item:hover .team-content h4 {
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
 }
 
 .team .team-item .team-content p {
@@ -914,7 +927,7 @@
     top: 0;
     left: -25px;
     color: var(--bs-white);
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
 }
 
 .testimonial-carousel .owl-dots {
@@ -927,7 +940,7 @@
     height: 30px;
     border-radius: 30px;
     margin: 20px 10px 0 10px;
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
     transition: 0.5s;
 }
 
@@ -951,7 +964,7 @@
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active span::after {
-    background: var(--bs-primary);
+    background: hsl(194, 76%, 44%);
 }
 
 .testimonial-carousel .owl-dots .owl-dot span::after {
@@ -998,7 +1011,7 @@
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
 }
 /*** Testimonial End ***/
 
@@ -1024,7 +1037,7 @@
 }
 
 .footer .footer-item a:hover {
-    color: var(--bs-primary);
+    color:hsl(194, 76%, 44%);
 }
 
 .footer .footer-item .footer-btn a,
@@ -1037,7 +1050,7 @@
 }
 
 .footer .footer-item .footer-btn a:hover i {
-    color: var(--bs-primary);
+    color: hsl(194, 76%, 44%);
 }
 
 .footer .footer-item .opening-date {

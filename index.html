@@ -43,7 +43,6 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
     <body>
 
         <!-- Navbar & Hero Start -->
@@ -60,7 +59,7 @@
                 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="#Home" class="nav-item nav-link">Главная</a>
+                        <!-- <a href="#Home" class="nav-item nav-link">Главная</a> -->
                         <a href="#About" class="nav-item nav-link">О нас</a>
                         <a href="#Services" class="nav-item nav-link">Наши услуги</a>
                         <a href="#Products" class="nav-item nav-link">Наши продукты</a>
@@ -82,12 +81,13 @@
                         <a href="#Contact" class="nav-item nav-link">Контакты</a>
                     </div>
                     <div class="team-icon d-none d-xl-flex justify-content-center me-3">
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-1.5x fa-instagram"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz"><i class="fab fa-1.5x fa-telegram"></i></a>
+                        <!-- <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a> -->
+                        
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-youtube"></i></a>
                     </div>
-                    <a href="tel:+998909045517" class="btn btn-primary rounded-pill py-2 px-4">
+                    <a href="tel:+998909045517" class="btn btn-primary rounded-pill call-button py-2 px-4" data-bs-toggle="modal" data-bs-target="#callModal">
                         Позвонить <i class="fas fa-phone ms-2"></i>
                     </a>
                 </div>
@@ -247,7 +247,7 @@
                                 <div class="row g-0">
                                     <div class="col-lg-12">
                                         <div class="rounded mb-4">
-                                            <img src="https://images.squarespace-cdn.com/content/v1/5a3b2ad6a9db099030143e1d/bc71bd28-f008-4af5-b6fd-161be6981dcb/IngroundPoolInstallaion-AfterBuild.jpg" class="img-fluid rounded w-100" alt="">
+                                            <img src="img/second.jpg" class="img-fluid rounded w-100" alt="">
                                         </div>
                                         <div class="row gx-4 gy-0">
                                             <div class="col-6">
@@ -279,7 +279,7 @@
                                 </div>
                             </div>
                             <div class="rounded bg-primary p-4 position-absolute d-flex justify-content-center" style="width: 90%; height: 80px; top: -40px; left: 50%; transform: translateX(-50%);">
-                                <h3 class="mb-0 text-white">20 лет качества и надёжности</h3>
+                                <h3 class="mb-0 text-white text-s1">20 лет качества и надёжности</h3>
                             </div>
                         </div>
                     </div>
@@ -629,12 +629,13 @@
             <div class="container attractions-section py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                     <h4 class="text-primary">Горячая линия</h4>
-                    <h1 class="display-5 text-white mb-4">Свяжитесь с нами прямо сейчас</h1>
+                    <h1 class="display-5 text-white mb-4">Всё для вашего бассейна в одном месте!</h1>
                     <p class="text-white mb-0">
-                        У вас возникли вопросы? Нужна консультация по услугам или продуктам? Позвоните нам — мы всегда готовы помочь!
+                        Нужны оборудование, аксессуары или советы по уходу за бассейном? Мы подберём идеальное решение именно для вас!
+Свяжитесь с нами прямо сейчас — наши эксперты помогут вам, быстро и профессионально.
                         <br>
                         <br>
-                        <a href="tel:+998909045517" class="btn btn-primary rounded-pill py-2 px-4">
+                        <a href="tel:+998909045517" class="btn btn-primary rounded-pill call-button py-3 px-4" data-bs-toggle="modal" data-bs-target="#callModal">
                             Позвонить сейчас <i class="fas fa-phone ms-2"></i>
                         </a>
                         
@@ -644,6 +645,43 @@
             </div>
         </div>
         <!-- Attractions End -->
+
+        <!-- Модальное окно -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header">
+          <h5 class="modal-title" id="callModalLabel">Оставьте заявку</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form id="callRequestForm">
+            <div class="mb-3">
+              <label for="userName" class="form-label">Ваше имя</label>
+              <input type="text" class="form-control" id="userName" name="userName" placeholder="Имя" required>
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Номер телефона</label>
+              <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" label="+998" placeholder="+998 (__) ___-__-__" required>
+            </div>
+            <p class="small text-muted mb-2">
+              Наш оператор свяжется с вами в ближайшее время.
+            </p>
+            <button type="submit" class="btn btn-primary w-100">Отправить заявку</button>
+          </form>
+  
+          <hr class="my-4">
+  
+          <div class="text-center">
+            <p class="fw-bold mb-1">Или свяжитесь с нами прямо сейчас:</p>
+            <a href="tel:+998909045517" class="btn btn-outline-primary rounded-pill">
+              +998 90 904 55 17 <i class="fas fa-phone ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <!-- Gallery Start -->
         <div class="container-fluid gallery pb-5" id="Works">
@@ -840,10 +878,10 @@
                                 <i class="fas fa-map-marker-alt text-primary me-3"></i>
                                 <p class="text-white mb-0">Ташкент, Улица Паркент, 47А</p>
                             </div>
-                            <div class="d-flex align-items-center">
+                            <!-- <div class="d-flex align-items-center">
                                 <i class="fas fa-envelope text-primary me-3"></i>
                                 <p class="text-white mb-0">info@example.com</p>
-                            </div>
+                            </div> -->
                             <div class="d-flex align-items-center">
                                 <i class="fa fa-phone-alt text-primary me-3"></i>
                                 <p class="text-white mb-0">+998 90 904 55 17</p>
@@ -875,11 +913,22 @@
                                     <p class="mb-0 text-white"><i class="fas fa-clock text-primary me-2"></i> 10:00 - 18:00</p>
                                 </div> -->
                                 <br>
-                                <div class="footer team-icon d-flex d-sm-flex justify-content-left me-3">
+                                <!-- <div class="footer team-icon d-flex d-sm-flex justify-content-left me-3">
                                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
                                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
                                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div> -->
+                                <div class="team-icon d-flex justify-content-start">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://instagram.com" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz" target="_blank">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://youtube.com" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -991,6 +1040,54 @@
             });
         });
     </script>
+    <script>
+        const token = '7945542594:AAG51G6KyfZmtGNO23vG7A3eEm1DHv7lQ-o';
+        const chatId = '-1002580484624';
+      
+        document.getElementById('callRequestForm').addEventListener('submit', function (e) {
+          e.preventDefault();
+      
+          const name = document.getElementById('userName').value.trim();
+          const phone = document.getElementById('phoneNumber').value.trim();
+      
+          if (!name || !phone) {
+            alert('Пожалуйста, заполните все поля!');
+            return;
+          }
+      
+          const message = `
+      🆕 *Новая заявка с сайта!*
+      👤 *Имя:* ${name}
+      📞 *Телефон:* ${phone}
+          `;
+      
+          fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              chat_id: chatId,
+              text: message,
+              parse_mode: 'Markdown',
+            }),
+          })
+            .then(response => {
+              if (response.ok) {
+                alert('Заявка успешно отправлена!');
+                document.getElementById('callRequestForm').reset();
+                const modal = bootstrap.Modal.getInstance(document.getElementById('callModal'));
+                modal.hide();
+              } else {
+                alert('Ошибка при отправке. Попробуйте позже.');
+              }
+            })
+            .catch(error => {
+              console.error('Ошибка:', error);
+              alert('Ошибка соединения. Попробуйте позже.');
+            });
+        });
+      </script>
     
     </body>
 

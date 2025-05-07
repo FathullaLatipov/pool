@@ -29,36 +29,94 @@
 </head>
 <body>
 
+    <style>
+        * {
+            #fullDescription h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#fullDescription h4 {
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#fullDescription ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+#fullDescription li {
+  margin-bottom: 5px;
+}
+
+#fullDescription blockquote {
+  margin-left: 20px;
+  font-style: italic;
+  color: #666;
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+}
+
+#fullDescription strong {
+  color: #000;
+}
+        }
+    </style>
     <!-- Navbar & Hero Start -->
-    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="display-6 text-dark"><img src="img/logo.png" style="max-height:70px !important" alt="">Pool-zone</h1>
-            </a>
-            <button class="navbar-toggler icon-toggler" type="button" id="navbarToggler" aria-expanded="false">
-                <i class="fas fa-bars open-icon"></i>
-                <i class="fas fa-times close-icon d-none"></i>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Главная</a>
-                    <a href="#Contact" class="nav-item nav-link">Контакты</a>
-                </div>
-                <div class="team-icon d-none d-xl-flex justify-content-center me-3">
-                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-1.5x fa-instagram"></i></a>
-                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz"><i class="fab fa-1.5x fa-telegram"></i></a>
-                    <!-- <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a> -->
-                    
-                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-youtube"></i></a>
-                </div>
-                <a href="tel:+998909045517" class="btn btn-primary rounded-pill call-button py-2 px-4" data-bs-toggle="modal" data-bs-target="#callModal">
-                    Позвонить <i class="fas fa-phone ms-2"></i>
+        <div class="container-fluid nav-bar sticky-top px-4 py-0 py-lg-0" style="box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 6px 12px !important;">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="display-6 text-dark"><img src="img/logo.png" style="max-height:70px !important" alt="">Pool-zone</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar & Hero End -->
+                <button class="navbar-toggler icon-toggler" type="button" id="navbarToggler" aria-expanded="false">
+                    <i class="fas fa-bars open-icon"></i>
+                    <i class="fas fa-times close-icon d-none"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <!-- <a href="#Home" class="nav-item nav-link">Главная</a> -->
+                        <a href="index.html#About" class="nav-item nav-link">О нас</a>
+                        <a href="index.html#Services" class="nav-item nav-link">Наши услуги</a>
+                        <a href="index.html#Products" class="nav-item nav-link">Наши продукты</a>
+                        <a href="index.html#Works" class="nav-item nav-link">Наши работы</a>
+                        <a href="index.html#Location" class="nav-item nav-link">Наша локация</a>
+                        
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Our Feature</a>
+                                <a href="gallery.html" class="dropdown-item">Our Gallery</a>
+                                <a href="attraction.html" class="dropdown-item">Attractions</a>
+                                <a href="package.html" class="dropdown-item">Ticket Packages</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div> -->
+                        <a href="#Contact" class="nav-item nav-link">Контакты</a>
+                    </div>
+                    <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.instagram.com/pool_zone_uz?igsh=MXNmbmp6Ym5teXlsYw==">
+                            <i class="fab fa-instagram fa-1.5x" style="color: #E1306C !important"></i>
+                          </a>
+                          <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz">
+                            <i class="fab fa-telegram fa-1.5x" style="color: #0088cc !important"></i>
+                          </a>
+                          <a class="btn btn-square btn-light rounded-circle mx-1" href="#">
+                            <i class="fab fa-youtube fa-1.5x" style="color: #FF0000 !important"></i>
+                          </a>
+                    </div>
+                    <a href="tel:+998909045517" class="btn btn-primary rounded-pill call-button py-2 px-4" data-bs-toggle="modal" data-bs-target="#callModal">
+                        <i class="fas fa-phone ms-2" style="margin-right: 0.4rem !important; margin-left: 0px !important;"></i> Позвонить 
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
         <!-- Модальное окно -->
         <div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -140,12 +198,12 @@
                     <li><i class="fa fa-check text-primary me-2"></i>Безопасность для детей</li>
                 </ul>
 
-                <div class="d-flex align-items-center mb-4">
+                <!-- <div class="d-flex align-items-center mb-4">
                     <label for="quantity" class="form-label me-3 mb-0">Кол-во:</label>
                     <input type="number" id="quantity" value="1" min="1" class="form-control w-25">
-                </div>
+                </div> -->
 
-                <a href="#" class="btn btn-primary py-3 px-5 rounded-pill me-2" data-bs-toggle="modal" data-bs-target="#bookingModal">Купить</a>
+                <a href="#" class="btn btn-primary py-3 px-5 rounded-pill me-2" data-bs-toggle="modal" data-bs-target="#bookingModal">Узнать у специалиста</a>
             </div>
         </div>
 
@@ -160,28 +218,8 @@
                 <div class="tab-content" id="productTabContent">
                     <!-- Description Tab -->
                     <div class="tab-pane fade show active" id="description" role="tabpanel">
-                        <p id="fullDescription">
-                            Двигатель222 изготовлен из термостойкого пластика. Фильтрующий бак выполнен из полипропилена, армированным стекловолокном. Благодаря использованию такого сочетания комплект может быть использован вне технического помещения, на открытом воздухе. 
-
-                            В роли фильтрационной засыпки допускается использование кварцевого песка или стеклянного фильтрующего материала, которые не требует замены. 
-                            
-                            Следует своеврменно осуществлять очистку наполнителя, для поддержания соответствующего уровня фильтрации. Информацию о необходимости промывки предоставит манометр.
-                            
-                            Фильтр оснащён многопозиционным клапаном с шестью режимами:
-                            FILTER (фильтрация)
-                            BACKWASH (обратная промывка)
-                            RECIRCULATE (циркуляция в обход фильтра)
-                            RINSE (усадка засыпки)
-                            WASTE (слив)
-                            CLOSED (закрытье)
-                            Важно! Переключать режимы следует при выключенном насосе.
-                            
-                            Назначение фильтрационной установки Emaux FSF350
-                            Агрегат используется для обслуживания домашних бассейнов. Максимальный объем водоема – 16 000 литров. Модель предназначена для фильтрации воды не горячее 43 градусов и для работы при максимальном давлении в 2,5 Бар.
-                            
-                            Гарантийный срок – 24 месяца.    
-                        </p>
-                    </div>
+                        <div id="fullDescription"></div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -218,17 +256,22 @@
         </div>
     </div>
 
-      <!-- Footer Start -->
-      <div class="container-fluid footer py-5 wow fadeIn" id="Contact" data-wow-delay="0.2s">
+     <!-- Footer Start -->
+     <div class="container-fluid footer py-5 wow fadeIn" id="Contact" data-wow-delay="0.2s">
         <div class="container py-5">
             <div class="row g-5">
                 <!-- О нас и контакты -->
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="footer-item">
                         <a href="#" class="p-0">
-                            <h4 class="text-white mb-4">Pool-zone</h4>
+                            <h3 class="text-white mb-4">Pool-zone</h3>
                         </a>
-                        <p class="mb-2 text-white">Мы предоставляем услуги по обслуживанию водных объектов, включая бассейны и фонтаны. Задайте вопрос, и мы вам поможем.</p>
+                        <!-- <p class="mb-2 text-white">Мы предоставляем услуги по обслуживанию водных объектов, включая бассейны и фонтаны. Задайте вопрос, и мы вам поможем.</p> -->
+                        <div class="opening-clock flex-shrink-0">
+                            <h5 class="text-white mb-4">Время работы</h5>
+                            <h6 class="text-white mb-0 me-auto">Понедельник - Воскресенье:</h6>
+                            <p class="mb-0 text-white"><i class="fas fa-clock text-primary me-2"></i> 09:00 - 00:00</p>
+                        </div>
                         <div class="d-flex align-items-center">
                             <i class="fas fa-map-marker-alt text-primary me-3"></i>
                             <p class="text-white mb-0">Ташкент, Улица Паркент, 47А</p>
@@ -240,6 +283,21 @@
                         <div class="d-flex align-items-center">
                             <i class="fa fa-phone-alt text-primary me-3"></i>
                             <p class="text-white mb-0">+998 90 904 55 17</p>
+                        </div>
+                        <div class="d-flex">
+                            <p class="text-white mb-0">Подпишитесь что бы не потерять нас</p>
+                           
+                        </div>
+                        <div class="team-icon d-flex justify-content-start">
+                            <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.instagram.com/pool_zone_uz?igsh=MXNmbmp6Ym5teXlsYw==">
+                                <i class="fab fa-instagram fa-1.5x" style="color: #E1306C !important"></i>
+                              </a>
+                              <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz">
+                                <i class="fab fa-telegram fa-1.5x" style="color: #0088cc !important"></i>
+                              </a>
+                              <a class="btn btn-square btn-light rounded-circle mx-1" href="#">
+                                <i class="fab fa-youtube fa-1.5x" style="color: #FF0000 !important"></i>
+                              </a>
                         </div>
                     </div>
                 </div>
@@ -257,35 +315,35 @@
                 <!-- Время работы -->
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="footer-item">
-                        <h4 class="text-white mb-4">Время работы</h4>
-                        <div class="opening-date mb-3 pb-3">
-                            <div class="opening-clock flex-shrink-0">
+                        <!-- <h4 class="text-white mb-4">Время работы</h4> -->
+                        <!-- <div class="opening-date mb-3 pb-3"> -->
+                            <!-- <div class="opening-clock flex-shrink-0">
                                 <h6 class="text-white mb-0 me-auto">Понедельник - Воскресенье:</h6>
                                 <p class="mb-0 text-white"><i class="fas fa-clock text-primary me-2"></i> 09:00 - 00:00</p>
-                            </div>
+                            </div> -->
                             <!-- <div class="opening-clock flex-shrink-0">
                                 <h6 class="text-white mb-0 me-auto">Суббота - Воскресенье:</h6>
                                 <p class="mb-0 text-white"><i class="fas fa-clock text-primary me-2"></i> 10:00 - 18:00</p>
                             </div> -->
-                            <br>
+                            <!-- <br> -->
                             <!-- <div class="footer team-icon d-flex d-sm-flex justify-content-left me-3">
                                 <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
                                 <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
                             </div> -->
-                            <div class="team-icon d-flex justify-content-start">
-                                <a class="btn btn-square btn-light rounded-circle mx-1" href="https://instagram.com" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz" target="_blank">
-                                    <i class="fab fa-telegram"></i>
-                                </a>
-                                <a class="btn btn-square btn-light rounded-circle mx-1" href="https://youtube.com" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
+                            <!-- <div class="team-icon d-flex justify-content-start">
+                                <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.instagram.com/pool_zone_uz?igsh=MXNmbmp6Ym5teXlsYw==">
+                                    <i class="fab fa-instagram fa-1.5x" style="color: #E1306C !important"></i>
+                                  </a>
+                                  <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz">
+                                    <i class="fab fa-telegram fa-1.5x" style="color: #0088cc !important"></i>
+                                  </a>
+                                  <a class="btn btn-square btn-light rounded-circle mx-1" href="#">
+                                    <i class="fab fa-youtube fa-1.5x" style="color: #FF0000 !important"></i>
+                                  </a>
+                            </div> -->
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -321,6 +379,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.0.0/marked.min.js"></script>
     
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
@@ -339,7 +398,17 @@
             'Простая установка',
             'Долговечные материалы'
         ],
-        fullDescription: 'Фитинги для бассейна — это неотъемлемые элементы любой гидравлической системы, отвечающие за герметичное соединение труб, шлангов и оборудования. Они обеспечивают эффективную подачу, циркуляцию и отвод воды. В ассортименте — угольники, тройники, муфты, переходники и задвижки, изготовленные из прочных, устойчивых к хлору и ультрафиолету материалов (ПВХ, ABS-пластик). Такие компоненты легко монтируются, долговечны и безопасны для использования в бассейнах любого типа — каркасных, бетонных и надувных.'
+        fullDescription: `### Фитинги для бассейна
+
+#### Основные характеристики
+- **Назначение**: неотъемлемые элементы гидравлической системы для герметичного соединения труб, шлангов и оборудования.
+- **Функции**: обеспечивают эффективную подачу, циркуляцию и отвод воды.
+- **Ассортимент**: угольники, тройники, муфты, переходники и задвижки.
+- **Материалы**: изготовлены из прочных, устойчивых к хлору и ультрафиолету материалов (ПВХ, ABS-пластик).
+- **Преимущества**: легко монтируются, долговечны и безопасны для использования.
+
+#### Применение
+- Подходят для всех типов бассейнов: каркасных, бетонных и надувных.`
     },
     'tabletka': {
         title: 'Таблетки для бассейна(5 в 1, 10 в 1)',
@@ -353,8 +422,16 @@
             'Предотвращение водорослей',
             'Осветление воды'
         ],
-        fullDescription: 'Многофункциональные таблетки 5 в 1 и 10 в 1 — это идеальное решение для комплексного ухода за водой в бассейне. Они одновременно выполняют пять важных задач: дезинфекция (уничтожение бактерий и вирусов), стабилизация уровня pH, предотвращение образования водорослей, осветление воды и коагуляция мелких частиц для последующей фильтрации. Таблетки медленно растворяются, обеспечивая длительное и стабильное действие. Подходят для всех типов бассейнов, включая скиммерные и с автоматической подачей химии.'
-    },
+        fullDescription: `### Таблетки для бассейна (5 в 1, 10 в 1)
+
+#### Основные характеристики
+- **Назначение**: идеальное решение для комплексного ухода за водой в бассейне.
+- **Функции**: выполняют пять задач — дезинфекция (уничтожение бактерий и вирусов), стабилизация pH, предотвращение водорослей, осветление воды и коагуляция мелких частиц.
+- **Особенности**: медленно растворяются, обеспечивая длительное и стабильное действие.
+
+#### Применение
+- Подходят для всех типов бассейнов, включая скиммерные и с автоматической подачей химии.`
+  },
     'xlor': {
         title: 'Хлор в гранулах',
         image: 'img/3him.jpg',
@@ -367,8 +444,16 @@
             'Шоковое хлорирование',
             'Простое дозирование'
         ],
-        fullDescription: 'Гранулированный хлор — это эффективное средство для быстрой и надежной дезинфекции воды в бассейне. Идеально подходит как для регулярного использования, так и для шокового хлорирования при сильных загрязнениях или после длительного простоя. Хлор в гранулах легко растворяется, быстро уничтожает бактерии, грибки и вирусы, предотвращает образование слизи и неприятного запаха. Подходит для ручного дозирования и систем автоматической подачи. Рекомендуется для всех типов бассейнов.'
-    },
+        fullDescription: `### Гранулированный хлор
+
+#### Основные характеристики
+- **Назначение**: средство для быстрой и надежной дезинфекции воды.
+- **Применение**: подходит для регулярного использования и шокового хлорирования при сильных загрязнениях или после простоя.
+- **Особенности**: легко растворяется, быстро уничтожает бактерии, грибки и вирусы, предотвращает образование слизи и неприятного запаха.
+
+#### Применение
+- Подходит для ручного дозирования и систем автоматической подачи, рекомендован для всех типов бассейнов.`
+  },
     'PH': {
         title: 'Смягчитель воды PH',
         image: 'img/ph.jpg',
@@ -381,8 +466,16 @@
             'Предотвращение накипи',
             'Безопасность для кожи'
         ],
-        fullDescription: 'Смягчитель воды PH — это специализированное средство для уменьшения жесткости воды, особенно актуальное в регионах с высоким содержанием кальция и магния. Использование смягчителя предотвращает образование накипи на стенках бассейна, ТЭНах, фильтрах и насосах, тем самым продлевая срок службы оборудования. Кроме того, мягкая вода более приятна на ощупь, безопасна для кожи и купальных принадлежностей. Применяется как на этапе подготовки воды, так и в процессе эксплуатации.'
-    },
+        fullDescription: `### Смягчитель воды PH
+
+#### Основные характеристики
+- **Назначение**: специализированное средство для уменьшения жесткости воды, актуально в регионах с высоким содержанием кальция и магния.
+- **Преимущества**: предотвращает образование накипи на стенках, ТЭНах, фильтрах и насосах, продлевая срок службы оборудования.
+- **Дополнительно**: мягкая вода приятна на ощупь и безопасна для кожи и принадлежностей.
+
+#### Применение
+- Используется на этапе подготовки воды и в процессе эксплуатации.`
+  },
     'alcegid': {
         title: 'Альгецид для бассейна',
         image: 'img/alcigit.jpeg',
@@ -395,8 +488,16 @@
             'Безопасен для кожи',
             'Совместим с хлором'
         ],
-        fullDescription: 'Альгецид — это эффективное средство для профилактики и устранения водорослей в бассейне. Он предотвращает цветение воды, образование скользкого налета на стенках и дне бассейна, а также улучшает общее качество воды. Подходит для регулярного использования в течение всего сезона купания. Совместим с хлорсодержащими средствами, не вызывает пены, не раздражает кожу и глаза. Незаменим при повышенных температурах, когда риск появления водорослей возрастает.'
-    },
+        fullDescription: `### Альгецид
+
+#### Основные характеристики
+- **Назначение**: эффективное средство для профилактики и устранения водорослей.
+- **Функции**: предотвращает цветение воды, образование скользкого налета на стенках и дне, улучшает качество воды.
+- **Особенности**: совместим с хлорсодержащими средствами, не вызывает пены, не раздражает кожу и глаза.
+
+#### Применение
+- Подходит для регулярного использования в течение сезона, незаменим при высоких температурах.`
+  },
     'flokulyant': {
         title: 'Флокулянт для бассейна',
         image: 'img/jio.jpg',
@@ -409,8 +510,16 @@
             'Снижение нагрузки на фильтр',
             'Безопасное использование'
         ],
-        fullDescription: 'Флокулянт — это коагулирующее средство, которое связывает мелкие загрязнения (глину, органику, пыльцу), образуя крупные хлопья, легко удаляемые системой фильтрации или пылесосом. Особенно эффективно при помутнении воды, после дождя или интенсивного купания. Повышает прозрачность воды, снижает нагрузку на фильтры, усиливает действие других химических препаратов. Безопасен в применении, не нарушает баланс воды, подходит для всех типов бассейнов.'
-    },
+        fullDescription: `### Флокулянт
+
+#### Основные характеристики
+- **Назначение**: коагулирующее средство, связывает мелкие загрязнения (глину, органику, пыльцу), образуя крупные хлопья.
+- **Применение**: эффективно при помутнении воды, после дождя или интенсивного купания.
+- **Преимущества**: повышает прозрачность, снижает нагрузку на фильтры, усиливает действие других препаратов.
+
+#### Применение
+- Безопасен, не нарушает баланс воды, подходит для всех типов бассейнов.`
+  },
     'shetka': {
         title: 'Раздвижные штанги для бассейна',
         image: 'img/palka.jpg',
@@ -423,8 +532,16 @@
             'Эргономичная ручка',
             'Универсальное крепление'
         ],
-        fullDescription: 'Раздвижные телескопические штанги предназначены для удобного подключения насадок для чистки бассейна — щеток, сачков, вакуумных головок и прочего оборудования. Изготовлены из прочного, коррозионно-устойчивого алюминия или фибергласса. Регулируемая длина позволяет эффективно очищать даже глубокие и большие бассейны. Эргономичная ручка и надёжные фиксаторы обеспечивают комфорт и безопасность при использовании.'
-    },
+        fullDescription: `### Раздвижные телескопические штанги
+
+#### Основные характеристики
+- **Назначение**: предназначены для подключения насадок для чистки (щеток, сачков, вакуумных головок).
+- **Материалы**: изготовлены из прочного, коррозионно-устойчивого алюминия или фибергласса.
+- **Особенности**: регулируемая длина, эргономичная ручка и надежные фиксаторы.
+
+#### Применение
+- Подходят для очистки глубоких и больших бассейнов.`
+  },
     'shlang': {
         title: 'Пылесосные шланги для бассейна',
         image: 'img/sH2.jpg',
@@ -437,8 +554,16 @@
             'Надежное соединение',
             'Различные длины'
         ],
-        fullDescription: 'Гибкие пылесосные шланги предназначены для подключения ручных или полуавтоматических пылесосов к системе фильтрации бассейна. Обладают высокой износостойкостью, устойчивостью к химическим препаратам и ультрафиолету. Обеспечивают надежное соединение и стабильную работу без перегибов и утечек воздуха. Доступны в разных длинах, что позволяет подобрать идеальный вариант для вашего бассейна.'
-    },
+        fullDescription: `### Гибкие пылесосные шланги
+
+#### Основные характеристики
+- **Назначение**: предназначены для подключения ручных или полуавтоматических пылесосов к системе фильтрации.
+- **Особенности**: высокая износостойкость, устойчивость к химическим препаратам и ультрафиолету, надежное соединение без перегибов и утечек.
+- **Дополнительно**: доступны в разных длинах.
+
+#### Применение
+- Подходят для любых бассейнов.`
+  },
             'vacuum-head': {
                 title: 'Головка для пылесоса',
                 image: 'img/head.jpg',
@@ -451,8 +576,16 @@
                     'Износостойкий материал',
                     'Удобная форма'
                 ],
-                fullDescription: 'Эта головка для пылесоса предназначена для ручной очистки дна бассейна. Она легко подключается к стандартным шлангам и обеспечивает эффективное удаление грязи и мелкого мусора. Изготовлена из прочного пластика, устойчивого к износу, и имеет эргономичную форму для удобства использования. Подходит для бассейнов любого размера. Гарантия – 12 месяцев.'
-            },
+                fullDescription: `### Головка для пылесоса
+
+#### Основные характеристики
+- **Назначение**: предназначена для ручной очистки дна бассейна.
+- **Особенности**: легко подключается к стандартным шлангам, эффективно удаляет грязь и мусор, изготовлена из прочного пластика.
+- **Дополнительно**: эргономичная форма для удобства использования.
+
+#### Применение
+- Подходит для бассейнов любого размера. Гарантия – 12 месяцев.`
+  },
             'brushes': {
                 title: 'Щетки для бассейна',
                 image: 'img/head2.jpeg',
@@ -465,8 +598,16 @@
                     'Прочный материал',
                     'Для стен и дна'
                 ],
-                fullDescription: 'Набор щеток для бассейна включает жесткие и мягкие щетки, которые идеально подходят для чистки стен и дна бассейна. Жесткая щетина эффективно удаляет стойкий налет, а мягкая – подходит для деликатной очистки. Щетки оснащены удобной ручкой и изготовлены из прочного материала, устойчивого к воздействию химии. Гарантия – 6 месяцев.'
-            },
+                fullDescription: `### Набор щеток для бассейна
+
+#### Основные характеристики
+- **Назначение**: включает жесткие и мягкие щетки для чистки стен и дна.
+- **Особенности**: жесткая щетина удаляет налет, мягкая — для деликатной очистки, оснащены удобной ручкой, изготовлены из прочного материала.
+- **Дополнительно**: устойчивы к воздействию химии.
+
+#### Применение
+- Подходят для всех типов бассейнов. Гарантия – 6 месяцев.`
+  },
             'water-tester': {
                 title: 'Тестер для воды в бассейне',
                 image: 'img/j32.jpg',
@@ -479,8 +620,16 @@
                     'Многоразовый набор',
                     'Для всех типов бассейнов'
                 ],
-                fullDescription: 'Тестер для воды в бассейне позволяет быстро и точно измерить уровень хлора, pH, щелочности и других важных показателей. В комплект входят реагенты и инструкция для простого использования. Подходит для всех типов бассейнов, включая частные и общественные. Набор рассчитан на многократное использование. Гарантия – 12 месяцев.'
-            },
+                fullDescription: `### Тестер для воды в бассейне
+
+#### Основные характеристики
+- **Назначение**: позволяет быстро и точно измерить уровень хлора, pH, щелочности и других показателей.
+- **Комплект**: включает реагенты и инструкцию.
+- **Особенности**: рассчитан на многократное использование.
+
+#### Применение
+- Подходит для частных и общественных бассейнов. Гарантия – 12 месяцев.`
+  },
             'filters': {
                 title: 'Фильтры для бассейна',
                 image: 'img/fil2.jpg',
@@ -493,7 +642,14 @@
                     'Ночное освещение',
                     'Безопасность для детей'
                 ],
-                fullDescription: 'Двигатель изготовлен из термостойкого пластика. Фильтрующий бак выполнен из полипропилена, армированным стекловолокном. Благодаря использованию такого сочетания комплект может быть использован вне технического помещения, на открытом воздухе. В роли фильтрационной засыпки допускается использование кварцевого песка или стеклянного фильтрующего материала, которые не требуют замены. Следует своевременно осуществлять очистку наполнителя, для поддержания соответствующего уровня фильтрации. Информацию о необходимости промывки предоставит манометр. Фильтр оснащён многопозиционным клапаном с шестью режимами: FILTER (фильтрация), BACKWASH (обратная промывка), RECIRCULATE (циркуляция в обход фильтра), RINSE (усадка засыпки), WASTE (слив), CLOSED (закрытие). Важно! Переключать режимы следует при выключенном насосе. Назначение фильтрационной установки Emaux FSF350: агрегат используется для обслуживания домашних бассейнов. Максимальный объем водоема – 16 000 литров. Модель предназначена для фильтрации воды не горячее 43 градусов и для работы при максимальном давлении в 2,5 Бар. Гарантийный срок – 24 месяца.'
+                fullDescription: `### Фильтры для бассейна
+#### Основные характеристики
+- **Двигатель**: изготовлен из термостойкого пластика.
+- **Фильтрующий бак**: выполнен из полипропилена, армированного стекловолокном.
+- **Положение**: может быть использован вне технического помещения, на открытом воздухе.
+- **Фильтрационная засыпка**: допускается использование кварцевого песка или стеклянного фильтрующего материала, которые не требуют замены.
+- **Очистка**: следует своевременно осуществлять очистку наполнителя для поддержания соответствующего уровня фильтрации.
+- **Информация о промывке**: предоставляется манометром.`
             },
             'pumps': {
                 title: 'Насосы для бассейна',
@@ -507,8 +663,18 @@
                     'Надежная конструкция',
                     'Простая установка'
                 ],
-                fullDescription: 'Циркуляционные насосы для бассейна обеспечивают эффективную фильтрацию и движение воды. Они отличаются высокой производительностью и энергоэффективностью, что позволяет снизить затраты на обслуживание бассейна. Насосы имеют надежную конструкцию, устойчивую к коррозии, и легко устанавливаются. Подходят для бассейнов объемом до 20 000 литров. Гарантия – 24 месяца.'
-            },
+                fullDescription: `### Насосы для бассейна
+
+#### Основные характеристики
+- **Назначение**: обеспечивают эффективную фильтрацию и движение воды.
+- **Преимущества**: высокая производительность, энергоэффективность, снижение затрат на обслуживание.
+- **Конструкция**: надёжная, устойчивая к коррозии.
+- **Установка**: легко устанавливаются.
+
+#### Применение
+- Подходят для бассейнов объёмом до 20 000 литров.
+- **Гарантия**: 24 месяца`
+  },
             'lights': {
                 title: 'Фонари для бассейна',
                 image: 'img/fonar.png',
@@ -521,38 +687,60 @@
                     'Разноцветные режимы',
                     'Долговечность'
                 ],
-                fullDescription: 'Подводные светодиодные светильники создают эффектную подсветку для вашего бассейна. Они полностью водонепроницаемы и оснащены яркими LED-лампами с возможностью выбора разноцветных режимов. Светильники отличаются долговечностью и низким энергопотреблением. Подходят для бассейнов любого типа и размера. Гарантия – 18 месяцев.'
-            }
+                fullDescription: `### Фонари для бассейна
+
+#### Основные характеристики
+- **Назначение**: создают эффектную подсветку для бассейна.
+- **Особенности**: полностью водонепроницаемы, оснащены яркими LED-лампами с возможностью выбора разноцветных режимов.
+- **Преимущества**: долговечность, низкое энергопотребление.
+
+#### Применение
+- Подходят для бассейнов любого типа и размера.
+- **Гарантия**: 18 месяцев`
+  }
         };
+        // Функция для отображения описания
+  function displayProductDescription(productId) {
+    const fullDescriptionDiv = document.getElementById('fullDescription');
+    const product = products[productId];
 
-        // Функция для обновления содержимого страницы
-        document.addEventListener('DOMContentLoaded', function () {
-            // Извлекаем productId из URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const productId = urlParams.get('productId');
+    if (product && product.fullDescription) {
+      // Парсим Markdown в HTML с помощью marked.js
+      const htmlContent = marked.parse(product.fullDescription);
+      // Вставляем отформатированный HTML в div
+      fullDescriptionDiv.innerHTML = htmlContent;
+    } else {
+      fullDescriptionDiv.innerHTML = '<p>Описание не найдено.</p>';
+    }
+  }
 
-            // Если productId не найден, показываем страницу по умолчанию (например, фильтры)
-            const product = products[productId] || products['filters'];
 
-            // Обновляем содержимое страницы
-            document.getElementById('product-title').textContent = product.title;
-            document.getElementById('product-image').src = product.image;
-            // Убрали обновление цен, так как они закомментированы в HTML
-            // document.getElementById('product-price').textContent = product.price;
-            // document.getElementById('product-old-price').textContent = product.oldPrice;
-            document.getElementById('product-description').textContent = product.description;
+         // Обновление содержимого страницы при загрузке
+  document.addEventListener('DOMContentLoaded', function () {
+    // Извлекаем productId из URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('productId') || 'filters'; // По умолчанию 'filters'
 
-            // Обновляем список характеристик
-            const featuresList = document.getElementById('product-features');
-            featuresList.innerHTML = ''; // Очищаем текущий список
-            product.features.forEach(feature => {
-                const li = document.createElement('li');
-                li.innerHTML = `<i class="fa fa-check text-primary me-2"></i>${feature}`;
-                featuresList.appendChild(li);
-            });
+    // Получаем продукт
+    const product = products[productId] || products['filters'];
 
-            // Обновляем полное описание (исправили ID)
-            document.getElementById('fullDescription').textContent = product.fullDescription;
+    // Обновляем содержимое страницы
+    document.getElementById('product-title').textContent = product.title;
+    document.getElementById('product-image').src = product.image;
+    // Цены закомментированы в HTML, поэтому их не обновляем
+    document.getElementById('product-description').textContent = product.description;
+
+    // Обновляем список характеристик
+    const featuresList = document.getElementById('product-features');
+    featuresList.innerHTML = ''; // Очищаем текущий список
+    product.features.forEach(feature => {
+      const li = document.createElement('li');
+      li.innerHTML = `<i class="fa fa-check text-primary me-2"></i>${feature}`;
+      featuresList.appendChild(li);
+    });
+
+    // Вызываем функцию для отображения fullDescription в формате Markdown
+    displayProductDescription(productId);
         });
     </script>
     <script>

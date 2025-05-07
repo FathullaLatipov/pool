@@ -46,7 +46,7 @@
     <body>
 
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid nav-bar sticky-top px-4 py-0 py-lg-0">
+        <div class="container-fluid nav-bar sticky-top px-4 py-0 py-lg-0" style="box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 6px 12px !important;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="index.html" class="navbar-brand p-0">
                     <h1 class="display-6 text-dark"><img src="img/logo.png" style="max-height:70px !important" alt="">Pool-zone</h1>
@@ -81,14 +81,18 @@
                         <a href="#Contact" class="nav-item nav-link">Контакты</a>
                     </div>
                     <div class="team-icon d-none d-xl-flex justify-content-center me-3">
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-1.5x fa-instagram"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz"><i class="fab fa-1.5x fa-telegram"></i></a>
-                        <!-- <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a> -->
-                        
-                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.instagram.com/pool_zone_uz?igsh=MXNmbmp6Ym5teXlsYw==">
+                            <i class="fab fa-instagram fa-1.5x" style="color: #E1306C !important"></i>
+                          </a>
+                          <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz">
+                            <i class="fab fa-telegram fa-1.5x" style="color: #0088cc !important"></i>
+                          </a>
+                          <a class="btn btn-square btn-light rounded-circle mx-1" href="#">
+                            <i class="fab fa-youtube fa-1.5x" style="color: #FF0000 !important"></i>
+                          </a>
                     </div>
                     <a href="tel:+998909045517" class="btn btn-primary rounded-pill call-button py-2 px-4" data-bs-toggle="modal" data-bs-target="#callModal">
-                        Позвонить <i class="fas fa-phone ms-2"></i>
+                        <i class="fas fa-phone ms-2" style="margin-right: 0.4rem !important; margin-left: 0px !important;"></i> Позвонить 
                     </a>
                 </div>
             </nav>
@@ -138,7 +142,11 @@
                     </div>
                 </div>
             </div>
+           
         </div>
+        <hr style="height: 5px;
+        color:#143f85;
+        margin: 0px;">
         <!-- Carousel End -->
 
 
@@ -199,8 +207,9 @@
                 <div class="row g-5">
                     <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div>
-                            <h4 class="text-primary">О нас</h4>
-                            <h1 class="display-5 mb-4">Ваш надежный партнер в проектировании и строительстве бассейнов</h1>
+                            <h4 class="display-5 text-primary">О нас</h4>
+                            <h4 class="mb-4">Уже более 20 лет мы помогаем каждому, кто к нам обращается — от создание бассейна мечты до профессионального ухода за ним. <br> <br> Обращаясь к нам вы всегда получите следующее: </h4>
+                       
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <div class="d-flex">
@@ -286,6 +295,9 @@
                 </div>
             </div>
         </div>
+        <hr style="height: 5px;
+        color:#143f85;
+        margin: 0px;">
         <!-- About End -->
 
 
@@ -293,8 +305,8 @@
         <div class="container-fluid service py-5" id="Services">
             <div class="container service-section py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Наши Услуги</h4>
-                    <h1 class="display-5 text-white mb-4">Информация об услугах</h1>
+                    <h1 class="display-5 text-primary">Наши Услуги</h1>
+                    <h4 class="text-white mb-4">Информация об услугах</h4>
                     <p class="mb-0 text-white">Проектирование и строительство бассейнов Мы предлагаем полный цикл услуг — от проектирования до строительства бассейнов любой сложности.
                     </p>
                 </div>
@@ -356,13 +368,16 @@
                 </div>
             </div>
         </div>
+        <hr style="height: 5px;
+        color:#143f85;
+        margin: 0px;">
         <!-- Service End -->
 
              <!-- Blog Start -->
-             <div class="container-fluid blog pb-5 mt-5" id="Products">
+             <div class="container-fluid blog pb-5 mt-3" id="Products">
                 <div class="container pb-5">
                     <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                        <h4 class="text-primary">Наши продукты</h4>
+                        <!-- <h4 class="text-primary">Наши продукты</h4> -->
                         <h1 class="display-5 mb-4">Новинки и решения для вашего бассейна</h1>
                         <p class="mb-0">Мы предлагаем широкий ассортимент продуктов, которые помогут вам создать идеальные условия для вашего бассейна.
                         </p>
@@ -609,7 +624,20 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.6s"></div> -->
+                        <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="blog-item custom-style">
+                                <!-- <div class="blog-img">
+                                    <a href="#">
+                                        <img src="img/fonar.png" class="img-fluid w-100 rounded-top" alt="Фонари для бассейна">
+                                    </a>
+                                </div> -->
+                                <div class="blog-content p-4">
+                                    <a href="#" class="h4 d-inline-block mb-4">фывафывафывафыва</a>
+                                    <p class="mb-4">Пфывафывафывафывафыва афыва фыв афы афы ав</p>
+                                    <a href="feature.html?productId=lights" class="btn btn-primary rounded-pill call-button py-2 px-4" data-bs-toggle="modal" data-bs-target="#callModal"><i class="fas fa-phone ms-2"></i> Связаться со специалистом <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
                       
                     </div>
                     <!-- Show More Button -->
@@ -625,10 +653,12 @@
 
 
         <!-- Attractions Start -->
-        <div class="container-fluid attractions pt-5" >
-            <div class="container attractions-section py-5">
+        <hr style="height: 5px;
+        color:#143f85;
+        margin: 0px;">
+        <div class="container-fluid attractions pt-1" >
+            <div class="container attractions-section py-4">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Горячая линия</h4>
                     <h1 class="display-5 text-white mb-4">Всё для вашего бассейна в одном месте!</h1>
                     <p class="text-white mb-0">
                         Нужны оборудование, аксессуары или советы по уходу за бассейном? Мы подберём идеальное решение именно для вас!
@@ -636,7 +666,7 @@
                         <br>
                         <br>
                         <a href="tel:+998909045517" class="btn btn-primary rounded-pill call-button py-3 px-4" data-bs-toggle="modal" data-bs-target="#callModal">
-                            Позвонить сейчас <i class="fas fa-phone ms-2"></i>
+                            <i class="fas fa-phone ms-2"></i>  Позвонить сейчас 
                         </a>
                         
                     </p>
@@ -687,8 +717,8 @@
         <div class="container-fluid gallery pb-5" id="Works">
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Наши работы</h4>
-                    <h1 class="display-5 mb-4">Галерея выполненных проектов</h1>
+                    <h1 class="display-5 text-primary">Наши работы</h1>
+                    <h4 class="mb-4">Галерея выполненных проектов</h4>
                     <p class="mb-0"> Ознакомьтесь с примерами наших реализованных проектов — от строительства и отделки бассейнов до комплексного обслуживания и модернизации. Мы гордимся качеством и вниманием к деталям.
                     </p>
                 </div>
@@ -833,32 +863,67 @@
         </div> -->
         <!-- Team End -->
 
-
+        <hr style="height: 5px;
+        color:#143f85;
+        margin: 0px;">
         <!-- Testimonial Start -->
         <div class="container-fluid testimonial py-5" id="Location">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-                    <h4 class="text-primary">Наша локация</h4>
-                    <h1 class="display-5 text-white mb-4">Как нас найти</h1>
+                    <h1 class="display-5 text-primary">Как нас найти</h1>
+                    <h4 class="text-white mb-4">Наша локация</h4>
                     <!-- <p class="text-white mb-0">Мы ценим мнение каждого клиента. Ознакомьтесь с отзывами людей, которые уже воспользовались нашими услугами — от строительства до обслуживания бассейнов.
                     </p> -->
                    
                 </div>
-                <div class="owl-carousel testimonial-carousel" >
-                    <div class="testimonial-item p-4">
-                        <div style="width: 100%; height: 500px;">
-                            <iframe 
-                                src="https://www.google.com/maps?q=41.313167,69.330056&hl=ru&z=17&output=embed" 
-                                width="100%" 
-                                height="100%" 
-                                style="border-radius:10px;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
+                <div class="container">
+                    <div class="row text-center align-items-center">
+                  
+                      <!-- Левая колонка - Яндекс карта -->
+                      <div class="col-md-6 col-12 position-relative">
+                        <iframe
+                          src="https://yandex.uz/map-widget/v1/?ll=69.330096%2C41.312844&mode=whatshere&whatshere%5Bpoint%5D=69.330096%2C41.312844&whatshere%5Bzoom%5D=17&z=17"
+                          width="100%"
+                          height="400"
+                          frameborder="0"
+                          allowfullscreen="true"
+                          style="border-radius: 10px;">
+                        </iframe>
+                  
+                        <!-- Кнопка Яндекс -->
+                        <button
+                          onclick="window.open('https://yandex.uz/maps/10335/tashkent/house/YkAYdQRgSUwBQFprfX9wc3RnYA==', '_blank')"
+                          style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;"
+                          class="btn btn-primary rounded-pill call-button">
+                          Улица Паркент, 47А
+                        </button>
+                      </div>
+                      
+                      <!-- Правая колонка - Google карта -->
+                      <div class="col-md-6 col-12 position-relative">
+                        <iframe
+                          src="https://www.google.com/maps?q=41.313167,69.330056&hl=ru&z=17&output=embed"
+                          width="100%"
+                          height="400"
+                          style="border-radius: 10px; border:0;"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                  
+                        <!-- Кнопка Google -->
+                        <button
+                          onclick="window.open('https://www.google.com/maps/place/41%C2%B018\'47.4%22N+69%C2%B019\'48.2%22E', '_blank')"
+                          style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;"
+                          class="btn btn-primary rounded-pill call-button">
+                          Улица Паркент, 47А
+                        </button>
+                      </div>
+                  
                     </div>
-                </div>
+                  </div>
+                  
+                  
             </div>
         </div>
         <!-- Testimonial End -->
@@ -871,9 +936,14 @@
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
                             <a href="#" class="p-0">
-                                <h4 class="text-white mb-4">Pool-zone</h4>
+                                <h3 class="text-white mb-4">Pool-zone</h3>
                             </a>
-                            <p class="mb-2 text-white">Мы предоставляем услуги по обслуживанию водных объектов, включая бассейны и фонтаны. Задайте вопрос, и мы вам поможем.</p>
+                            <!-- <p class="mb-2 text-white">Мы предоставляем услуги по обслуживанию водных объектов, включая бассейны и фонтаны. Задайте вопрос, и мы вам поможем.</p> -->
+                            <div class="opening-clock flex-shrink-0">
+                                <h5 class="text-white mb-4">Время работы</h5>
+                                <h6 class="text-white mb-0 me-auto">Понедельник - Воскресенье:</h6>
+                                <p class="mb-0 text-white"><i class="fas fa-clock text-primary me-2"></i> 09:00 - 00:00</p>
+                            </div>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-map-marker-alt text-primary me-3"></i>
                                 <p class="text-white mb-0">Ташкент, Улица Паркент, 47А</p>
@@ -885,6 +955,21 @@
                             <div class="d-flex align-items-center">
                                 <i class="fa fa-phone-alt text-primary me-3"></i>
                                 <p class="text-white mb-0">+998 90 904 55 17</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="text-white mb-0">Подпишитесь что бы не потерять нас</p>
+                               
+                            </div>
+                            <div class="team-icon d-flex justify-content-start">
+                                <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.instagram.com/pool_zone_uz?igsh=MXNmbmp6Ym5teXlsYw==">
+                                    <i class="fab fa-instagram fa-1.5x" style="color: #E1306C !important"></i>
+                                  </a>
+                                  <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz">
+                                    <i class="fab fa-telegram fa-1.5x" style="color: #0088cc !important"></i>
+                                  </a>
+                                  <a class="btn btn-square btn-light rounded-circle mx-1" href="#">
+                                    <i class="fab fa-youtube fa-1.5x" style="color: #FF0000 !important"></i>
+                                  </a>
                             </div>
                         </div>
                     </div>
@@ -902,35 +987,35 @@
                     <!-- Время работы -->
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
-                            <h4 class="text-white mb-4">Время работы</h4>
-                            <div class="opening-date mb-3 pb-3">
-                                <div class="opening-clock flex-shrink-0">
+                            <!-- <h4 class="text-white mb-4">Время работы</h4> -->
+                            <!-- <div class="opening-date mb-3 pb-3"> -->
+                                <!-- <div class="opening-clock flex-shrink-0">
                                     <h6 class="text-white mb-0 me-auto">Понедельник - Воскресенье:</h6>
                                     <p class="mb-0 text-white"><i class="fas fa-clock text-primary me-2"></i> 09:00 - 00:00</p>
-                                </div>
+                                </div> -->
                                 <!-- <div class="opening-clock flex-shrink-0">
                                     <h6 class="text-white mb-0 me-auto">Суббота - Воскресенье:</h6>
                                     <p class="mb-0 text-white"><i class="fas fa-clock text-primary me-2"></i> 10:00 - 18:00</p>
                                 </div> -->
-                                <br>
+                                <!-- <br> -->
                                 <!-- <div class="footer team-icon d-flex d-sm-flex justify-content-left me-3">
                                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
                                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
                                     <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
                                 </div> -->
-                                <div class="team-icon d-flex justify-content-start">
-                                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://instagram.com" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz" target="_blank">
-                                        <i class="fab fa-telegram"></i>
-                                    </a>
-                                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://youtube.com" target="_blank">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
+                                <!-- <div class="team-icon d-flex justify-content-start">
+                                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.instagram.com/pool_zone_uz?igsh=MXNmbmp6Ym5teXlsYw==">
+                                        <i class="fab fa-instagram fa-1.5x" style="color: #E1306C !important"></i>
+                                      </a>
+                                      <a class="btn btn-square btn-light rounded-circle mx-1" href="https://t.me/PoolZoneUz">
+                                        <i class="fab fa-telegram fa-1.5x" style="color: #0088cc !important"></i>
+                                      </a>
+                                      <a class="btn btn-square btn-light rounded-circle mx-1" href="#">
+                                        <i class="fab fa-youtube fa-1.5x" style="color: #FF0000 !important"></i>
+                                      </a>
+                                </div> -->
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>

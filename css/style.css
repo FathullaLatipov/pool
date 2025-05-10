@@ -148,6 +148,9 @@
     .text-s1 {
         margin-top: -10px;
     }
+    .pr-img2 {
+        height: 290px !important
+    }
 }
 .btn-outline-primary:hover {
     color: #fff !important
@@ -253,6 +256,10 @@
     margin-top: 8px !important;
     transition: .5s;
     opacity: 0;
+    }
+    
+    .pr-img2 {
+        height: 406px;
     }
 
     .asd {

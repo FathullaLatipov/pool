@@ -78,6 +78,8 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    white-space: nowrap; /* Предотвращает перенос текста */
+    padding: 10px 30px; /* Уменьшенный padding для мобильных */
 }
 
 .enhanced-block .call-button:hover {
@@ -89,14 +91,18 @@
 @media (max-width: 768px) {
     .enhanced-block .blog-content {
         padding: 20px;
-        min-height: 150px;
+        min-height: 250px !important;
     }
     .enhanced-block .text-primary {
         font-size: 1.2rem;
     }
     .enhanced-block .call-button {
         bottom: 15px;
-        padding: 10px 20px;
+        font-size: 0.9rem; /* Уменьшенный размер шрифта для мобильных */
+        padding: 8px 20px; /* Еще меньший padding для компактности */
+        white-space: nowrap; /* Убедимся, что текст не переносится */
+        max-width: 90%; /* Ограничим ширину кнопки, чтобы она не выходила за пределы */
+        text-align: center;
     }
 }
         </style>
@@ -680,16 +686,16 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="blog-item custom-style enhanced-block">
-                                <div class="blog-content p-4 d-flex flex-column justify-content-center align-items-center" style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-height: 200px; position: relative;">
-                                    <h4 class="text-primary fw-bold mb-4 mt-3" style="color: #007bff;">У нас вы также можете найти всё необходимое для бассейна и строительства</h4>
-                                    <a href="feature.html?productId=lights" class="btn btn-primary rounded-pill call-button py-3 px-5" data-bs-toggle="modal" data-bs-target="#callModal" style="background-color: #0056b3; border: none; transition: all 0.3s; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);">
-                                        <i class="fas fa-phone ms-2"></i> Связаться со специалистом <i class="fas fa-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+    <div class="blog-item custom-style enhanced-block">
+        <div class="blog-content p-4 d-flex flex-column justify-content-center align-items-center" style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-height: 200px; position: relative;">
+            <h4 class="text-primary fw-bold mb-4 mt-3" style="color: #007bff;">У нас вы также можете найти всё необходимое для бассейна и строительства</h4>
+            <a href="feature.html?productId=lights" class="btn btn-primary rounded-pill call-button py-3 px-5" data-bs-toggle="modal" data-bs-target="#callModal" style="background-color: #0056b3; border: none; transition: all 0.3s; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); white-space: nowrap;">
+                <i class="fas fa-phone me-2"></i> Связаться со специалистом <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+</div>
                     </div>
                     <!-- Show More Button -->
 

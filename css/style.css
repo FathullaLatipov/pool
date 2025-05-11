@@ -632,9 +632,12 @@
   .banner-content {
     max-width: 100%;
   }
-  .mob-mr {
-    margin-top: 3% !important;
 }
+
+@media (max-width: 900px) {
+      .mob-mr {
+            margin-top: 3% !important;
+        }
 }
 
 @media (min-width: 900px){
